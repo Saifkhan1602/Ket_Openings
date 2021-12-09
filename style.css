@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAVcL4SderAkhZg8vZxgdQoZ7O1r6-KXwbnw&usqp=CAU")
+    center no-repeat;
+  background-size: cover;
+  text-align: start;
+  color: #fff;
+  font-size: 27px;
+  padding: 20px 0 0 50px;
+}
+
+.container {
+  width: 1100px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.search {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -7px rgb(88, 121, 114);
+  margin-top: -20px;
+}
+.jobs {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.jobs_item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  border: 1px solid rgba(88, 121, 114, 0.281);
+  padding: 30px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -7px rgb(88, 121, 114);
+}
+.image {
+  width: 100px;
+  height: auto;
+}
+.Jobs_left_column {
+  display: flex;
+  align-items: center;
+}
+.C_name {
+  color: rgb(63, 99, 91);
+  font-size: 15px;
+  padding-bottom: 4px;
+}
+.Job_title {
+  font-weight: bold;
+  color: rgb(61, 60, 60);
+  font-size: 20px;
+}
+.Job_info {
+  margin-left: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.Job_Details {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+.Jobs_right_column {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.roles {
+  color: rgb(88, 121, 114);
+  width: auto;
+  height: auto;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 0 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgba(110, 165, 153, 0.541);
+  position: relative;
+}
+.roles:hover {
+  background-color: #fff;
+  transition: 0.5s ease;
+  color: rgba(94, 148, 136, 0.699);
+}
+.search_field {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+}
+.search_clear {
+  color: rgb(88, 121, 114);
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.search_clear:hover {
+  text-decoration: underline;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+    padding: 7px 0 0 30px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 0 6px;
+  }
+  .search {
+    border-radius: 5px;
+    margin-top: -12px;
+  }
+  .jobs {
+    margin-top: 15px;
+  }
+  .jobs_item {
+    margin-bottom: 15px;
+    padding: 8px 3px;
+    border-radius: 5px;
+    box-shadow: 0 8px 13px -5px rgb(88, 121, 114);
+  }
+  .image {
+    width: 40px;
+  }
+
+  .C_name {
+    color: rgb(63, 99, 91);
+    font-size: 7px;
+    padding-bottom: 2px;
+  }
+  .Job_title {
+    font-weight: bold;
+    color: rgb(61, 60, 60);
+    font-size: 7px;
+  }
+  .Job_info {
+    margin-left: 6px;
+    width: auto;
+  }
+  .Job_Details {
+    font-size: 5px;
+    padding-top: 2px;
+  }
+
+  .roles {
+    padding: 3px;
+    border-radius: 3px;
+    margin: 0 2px;
+    font-size: 6px;
+  }
+
+  .search_field {
+    height: 100%;
+    width: 90%;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .search_clear {
+    font-size: 8px;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 70px;
+    font-size: 14px;
+    padding: 9px 0 0 35px;
+  }
+
+  .container {
+    width: 85%;
+    padding: 0 7px;
+  }
+  .search {
+    border-radius: 6px;
+    margin-top: -13px;
+  }
+  .jobs {
+    margin-top: 18px;
+  }
+  .jobs_item {
+    margin-bottom: 18px;
+    padding: 10px 6px;
+    border-radius: 6px;
+  }
+  .image {
+    width: 45px;
+  }
+
+  .C_name {
+    font-size: 8px;
+    padding-bottom: 3px;
+  }
+  .Job_title {
+    font-size: 9px;
+  }
+  .Job_info {
+    margin-left: 8px;
+    width: 90px;
+  }
+  .Job_Details {
+    font-size: 6px;
+
+    padding-top: 3px;
+  }
+
+  .roles {
+    padding: 4px;
+    border-radius: 4px;
+    margin: 0 3px;
+    font-size: 7px;
+  }
+
+  .search_field {
+    height: 100%;
+    width: 90%;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .search_clear {
+    font-size: 9px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    width: 100%;
+    height: 90px;
+    font-size: 18px;
+    padding: 12px 0 0 40px;
+  }
+
+  .container {
+    width: 85%;
+    padding: 0 8px;
+  }
+  .search {
+    border-radius: 7px;
+    margin-top: -15px;
+  }
+  .jobs {
+    margin-top: 20px;
+  }
+  .jobs_item {
+    margin-bottom: 20px;
+    padding: 15px 8px;
+    border-radius: 7px;
+  }
+  .image {
+    width: 60px;
+  }
+
+  .C_name {
+    font-size: 9px;
+    padding-bottom: 4px;
+  }
+  .Job_title {
+    font-size: 10px;
+  }
+  .Job_info {
+    margin-left: 8px;
+    width: 110px;
+  }
+  .Job_Details {
+    font-size: 7px;
+
+    padding-top: 4px;
+  }
+
+  .roles {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 4px;
+    font-size: 8px;
+  }
+
+  .search_field {
+    height: 100%;
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .search_clear {
+    font-size: 10px;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  .header {
+    width: 100%;
+    height: 120px;
+    font-size: 23px;
+    padding: 16px 0 0 45px;
+  }
+
+  .container {
+    width: 80%;
+    padding: 0 10px;
+  }
+  .search {
+    border-radius: 8px;
+    margin-top: -20px;
+  }
+  .jobs {
+    margin-top: 23px;
+  }
+  .jobs_item {
+    margin-bottom: 23px;
+    padding: 20px 10px;
+    border-radius: 8px;
+  }
+  .image {
+    width: 80px;
+  }
+
+  .C_name {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+  .Job_title {
+    font-size: 15px;
+  }
+  .Job_info {
+    margin-left: 10px;
+    width: 180px;
+  }
+  .Job_Details {
+    font-size: 10px;
+    padding-top: 4px;
+  }
+
+  .roles {
+    padding: 6px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 10px;
+  }
+
+  .search_field {
+    height: 100%;
+    width: 90%;
+    padding: 15px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .search_clear {
+    font-size: 13px;
+  }
+}
